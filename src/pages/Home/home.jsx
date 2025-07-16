@@ -17,8 +17,8 @@ export default function Home() {
                         whether you’re military, law enforcement, or a civilian focused on home defense. Our mission is to deliver training that meets you where you are and takes you to the next level.
                     </p>
                 </article>
-                <button className='absolute top-120 left-1/7 border-single border-red-600 border-3 w-1/4 h-10'>COURSES</button>
-                <button className='absolute top-120 right-1/7 border-single border-red-600 border-3 w-1/4 h-10'>RESOURCES</button>
+                <button className='absolute top-120 left-1/7 bg-[#81292D] w-1/4 h-10 rounded-tl-lg rounded-br-lg'>COURSES</button>
+                <button className='absolute top-120 right-1/7 bg-[#81292D] w-1/4 h-10 rounded-tl-lg rounded-br-lg'>RESOURCES</button>
             </section>
             {/* <h1 >Home</h1> */}
             <img src='https://wakatime.com/badge/user/97b58457-081b-4940-99c7-9888a9b41405/project/5ebb0fbe-3003-4f2a-a33c-8ef116da8a29.svg'></img>
