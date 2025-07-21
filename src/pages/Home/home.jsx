@@ -32,9 +32,22 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section className="flex flex-col items-center justify-center mt-5">
-          <h1>Instructor</h1>
-        </section> */}
+        <article className="flex flex-col items-center w-full mt-5 p-5">
+  <h1 className="text-3xl uppercase black-ops-one-regular mb-5">Instructor</h1>
+
+  <figure className="relative w-full h-96 bg-[url('../../Images/instructor.jpg')] bg-cover bg-center rounded-md overflow-hidden shadow-lg">
+    <figcaption className="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm text-white p-4">
+      <h1 className="text-lg md:text-xl uppercase black-ops-one-regular">Jaime C. Spencer</h1>
+      <p className="text-sm md:text-base">
+    DPS‑Certified Instructor • Veteran of Afghanistan & Iraq
+  </p>
+      <p className="text-sm md:text-base font-semibold mt-3 normal-case">
+      Jaime thrives on teaching and helping students grow as shooters, building safe, confident, and skilled marksmen for defense or recreation.
+      </p>
+    </figcaption>
+  </figure>
+</article>
+
 
             {/* <h1 >Home</h1> */}
             <img src='https://wakatime.com/badge/user/97b58457-081b-4940-99c7-9888a9b41405/project/5ebb0fbe-3003-4f2a-a33c-8ef116da8a29.svg'></img>
