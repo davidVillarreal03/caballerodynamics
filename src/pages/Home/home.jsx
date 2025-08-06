@@ -63,6 +63,18 @@ export default function Home() {
             </div>
           </article>
         </section>
+
+        <section className="flex flex-col items-center w-full mt-1 p-5">
+          <h1 className="text-3xl uppercase black-ops-one-regular mb-5">COURSES</h1>
+          <div className='flex flex-col items-center gap-4 justify-center w-full p-5'>
+            <button className="bg-[url('../../Images/pistol.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200 focus:outline-none active:scale-100"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>Pistol</span></button>
+            <button className="bg-[url('../../Images/carbine.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>defensive carbine</span></button>
+            <button className="bg-[url('../../Images/conceal.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>concealed carry</span></button>
+            <button className="bg-[url('../../Images/screen.png')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>defensive shotgun</span></button>
+            <button className="bg-[url('../../Images/explosive.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>explosive movement</span></button>
+      
+          </div>
+        </section>
             {/* <h1 >Home</h1> */}
             <img src='https://wakatime.com/badge/user/97b58457-081b-4940-99c7-9888a9b41405/project/5ebb0fbe-3003-4f2a-a33c-8ef116da8a29.svg'></img>
         </div>
