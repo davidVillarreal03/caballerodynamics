@@ -42,13 +42,12 @@ export default function Home() {
           <h1 className="text-3xl uppercase black-ops-one-regular mb-5">Instructor</h1>
 
           <figure className="relative w-full h-96 bg-[url('../../Images/instructor.jpg')] bg-cover bg-center rounded-md overflow-hidden shadow-lg">
-          <a href='/about'>
-              <button className="absolute top-0 right-0 bg-[#2b2b2b] rounded-bl-lg px-4 py-3">
+          
+              <button onClick={() => navigate('/about')} className="absolute top-0 right-0 bg-[#2b2b2b] rounded-bl-lg px-4 py-3">
                 <span className="text-[#f8f6f0] font-bold text-lg px-3">
                   <i className="fa-solid fa-location-arrow"></i>
                 </span>
               </button>
-          </a>
           <figcaption className="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm text-white p-4">
   <h1 className="text-lg md:text-xl uppercase black-ops-one-regular">Jaime C. Spencer</h1>
   <p className="text-sm md:text-base">
