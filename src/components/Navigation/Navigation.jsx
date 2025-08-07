@@ -23,7 +23,7 @@ function NavTabs() {
                         to="/"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
                         >
-                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]'>
+                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]' onClick={toggleMenu}>
                             <li className = "">
                                 Home
                             </li>   
@@ -33,7 +33,7 @@ function NavTabs() {
                         to="/about"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
                         >
-                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]'>
+                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]' onClick={toggleMenu}>
                             <li className = "">
                                 About
                             </li>   
@@ -43,7 +43,7 @@ function NavTabs() {
                         to="/courses"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
                         >
-                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]'>
+                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]' onClick={toggleMenu}>
                             <li className = "">
                                 Courses
                             </li>   
@@ -53,7 +53,7 @@ function NavTabs() {
                         to="/contact"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
                         >
-                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]'>
+                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]' onClick={toggleMenu}>
                             <li className = "">
                                 Contact
                             </li>   
@@ -63,7 +63,7 @@ function NavTabs() {
                         to="/resources"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
                         >
-                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]'>
+                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]' onClick={toggleMenu}>
                             <li className = "">
                                 Resources
                             </li>
