@@ -37,4 +37,55 @@
   }
 
 
+  .shimmer-on-press {
+    position: relative;
+    overflow: hidden;
+    padding: 12px 24px;
+    font-weight: bold;
+    color: #2b2b2b;
+    background-color: #81292D;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  /* Optional press scale feedback */
+  .shimmer-on-press:active {
+    transform: scale(0.98);
+  }
+  
+  /* Shimmer overlay */
+  .shimmer-on-press::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.5) 50%,
+      transparent 100%
+    );
+    transform: skewX(-20deg);
+    opacity: 0;
+  }
+  
+  /* Trigger shimmer on active/press */
+  .shimmer-on-press:active::after {
+    animation: shimmer-move 0.6s forwards;
+    opacity: 1;
+  }
+  
+  /* Shimmer animation */
+  @keyframes shimmer-move {
+    0% {
+      left: -75%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
   

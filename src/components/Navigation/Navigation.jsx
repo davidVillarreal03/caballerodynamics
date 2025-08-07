@@ -20,6 +20,16 @@ function NavTabs() {
             <nav className = {`" absolute top-0 z-50 border-t border-[#d9d9d9] border-opacity-25 left-0 w-full text-[#D9D9D9] transition delay-150 duration-500 ease-in-out  " ${isOpen ? "translate-y-0" : "-translate-y-full"}`}>
                 <ul className = "flex flex-col pt-5 pb-5 text-3xl bg-[#A89F94]">    
                     <Link
+                        to="/"
+                        className={currentPage === "/" ? "nav-link active" : "nav-link"}
+                        >
+                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]'>
+                            <li className = "">
+                                Home
+                            </li>   
+                        </button>
+                     </Link>
+                    <Link
                         to="/about"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
                         >
@@ -50,7 +60,7 @@ function NavTabs() {
                         </button>
                     </Link>
                     <Link
-                        to="/"
+                        to="/resources"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
                         >
                         <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]'>
