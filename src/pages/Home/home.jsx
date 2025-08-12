@@ -69,7 +69,7 @@ export default function Home() {
             <div className="flex items-center justify-between w-full p-5 bg-[#2b2b2b] w-full">
                 <span className="flex flex-col items-center justify-center w-full">
                   <a href='https://www.dps.texas.gov/section/handgun-licensing'><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Texas LTC <i class="fa-solid fa-id-card"></i></button></a>
-                  <a href='/resources/targets'><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Targets <i class="fa-solid fa-bullseye"></i></button></a>
+                  <a href='resources/targets'><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Targets <i class="fa-solid fa-bullseye"></i></button></a>
                 </span>
                 <span className="flex flex-col items-center justify-center w-full">
                   <button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Tickets <i class="fa-solid fa-ticket"></i></button>
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
         </section>
             {/* <h1 >Home</h1> */}
-            <img src='https://wakatime.com/badge/user/97b58457-081b-4940-99c7-9888a9b41405/project/5ebb0fbe-3003-4f2a-a33c-8ef116da8a29.svg'></img>
+            {/* <img src='https://wakatime.com/badge/user/97b58457-081b-4940-99c7-9888a9b41405/project/5ebb0fbe-3003-4f2a-a33c-8ef116da8a29.svg'></img> */}
         </div>
     )
 }
