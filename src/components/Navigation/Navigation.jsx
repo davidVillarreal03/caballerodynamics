@@ -10,7 +10,7 @@ function NavTabs() {
     }
 
     return (
-        <div className=''>
+        <div className='' id='top'>
             <section className='sticky top-0 w-full flex items-center justify-between px-4 bg-[#A89F94] shadow-md z-50'>
                 <img className='h-23' src={IMAGE_URL} alt="logo" />
                 <button className='p-4'>
