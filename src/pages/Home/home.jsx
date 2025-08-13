@@ -1,13 +1,23 @@
 import './home.css'
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    }
+  );
+  }, []);
   const navigate = useNavigate();
     return (
         <div className='flex flex-col items-center justify-center w-full'>
         
         <section className="flex flex-col items-center justify-center">
 
-          <div className="flex flex-col p-10 bg-[url('../../Images/heroimage.jpg')] bg-cover bg-center items-center justify-center text-center text-white">
+          <div data-aos='fade-up' className="flex flex-col p-10 bg-[url('../../Images/heroimage.jpg')] bg-cover bg-center items-center justify-center text-center text-white">
             <article className="flex flex-col items-center justify-center w-full">
             <h2 className="text-md font-bold uppercase">Welcome to</h2>
             <span className="black-ops-one-regular text-3xl text-black">
@@ -24,12 +34,12 @@ export default function Home() {
           </div>
 
             <div className="flex justify-between w-full p-3">
-              <a href="#courses">
+              <a href="#courses" data-aos='fade-right' data-aos-delay='500'>
                 <button className="bg-[#81292D] px-6 py-3 rounded-tl-lg rounded-br-lg font-semibold">
                   COURSES
                 </button>
               </a>
-              <a href="#resources">
+              <a href="#resources" data-aos='fade-left' data-aos-delay='500'>
                 <button className="bg-[#81292D] px-6 py-3 rounded-tl-lg rounded-br-lg font-semibold">
                   RESOURCES
                 </button>
@@ -41,9 +51,9 @@ export default function Home() {
         <article className="flex flex-col items-center w-full mt-5 p-5">
           <h1 className="text-3xl uppercase black-ops-one-regular mb-5">Instructor</h1>
 
-          <figure className="relative w-full h-96 bg-[url('../../Images/instructor.jpg')] bg-cover bg-center rounded-md overflow-hidden shadow-lg">
+          <figure data-aos='fade-up' className="relative w-full h-96 bg-[url('../../Images/instructor.jpg')] bg-cover bg-center rounded-md overflow-hidden shadow-lg">
           
-              <button onClick={() => navigate('/about')} className="absolute top-0 right-0 bg-[#2b2b2b] rounded-bl-lg px-4 py-3">
+              <button data-aos='fade-left' data-aos-delay='500' onClick={() => navigate('/about')} className="absolute top-0 right-0 bg-[#2b2b2b] rounded-bl-lg px-4 py-3">
                 <span className="text-[#f8f6f0] font-bold text-lg px-3">
                   <i className="fa-solid fa-location-arrow"></i>
                 </span>
@@ -68,12 +78,12 @@ export default function Home() {
             <h1 className="text-3xl uppercase black-ops-one-regular mb-5" id='resources'>Resources</h1>
             <div className="flex items-center justify-between w-full p-5 bg-[#2b2b2b] w-full">
                 <span className="flex flex-col items-center justify-center w-full">
-                  <a href='https://www.dps.texas.gov/section/handgun-licensing'><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Texas LTC <i class="fa-solid fa-id-card"></i></button></a>
-                  <a href='resources/targets'><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Targets <i class="fa-solid fa-bullseye"></i></button></a>
+                  <a data-aos="fade-left" href='https://www.dps.texas.gov/section/handgun-licensing'><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Texas LTC <i class="fa-solid fa-id-card"></i></button></a>
+                  <a href='resources/targets' data-aos="fade-left"><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Targets <i class="fa-solid fa-bullseye"></i></button></a>
                 </span>
                 <span className="flex flex-col items-center justify-center w-full">
-                  <button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Tickets <i class="fa-solid fa-ticket"></i></button>
-                  <a href='https://angelfireammo.com/#spencer'><button className='bg-[#f8f6f0] shimmer-on-press rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2'>Bulk Ammo</button></a>
+                  <button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press' data-aos="fade-left">Tickets <i class="fa-solid fa-ticket"></i></button>
+                  <a href='https://angelfireammo.com/#spencer' data-aos="fade-left"><button className='bg-[#f8f6f0] shimmer-on-press rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2'>Bulk Ammo</button></a>
                 </span>
             </div>
           </article>
@@ -82,11 +92,11 @@ export default function Home() {
         <section className="flex flex-col items-center w-full mt-1 p-5">
           <h1 className="text-3xl uppercase black-ops-one-regular mb-5" id='courses'>COURSES</h1>
           <div className='flex flex-col items-center gap-4 justify-center w-full p-5'>
-            <button onClick={() => navigate('/courses/pistol')} className="bg-[url('../../Images/pistol.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200 focus:outline-none active:scale-100"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>Pistol</span></button>
-            <button onClick={() => navigate('/courses/carbine')} className="bg-[url('../../Images/carbine.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>defensive carbine</span></button>
-            <button onClick={() => navigate('/courses/carry')} className="bg-[url('../../Images/conceal.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>concealed carry</span></button>
-            <button onClick={() => navigate('/courses/shotgun')} className="bg-[url('../../Images/screen.png')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>defensive shotgun</span></button>
-            <button onClick={() => navigate('/courses/explosive')} className="bg-[url('../../Images/explosive.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>explosive movement</span></button>
+            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/pistol')} className="bg-[url('../../Images/pistol.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200 focus:outline-none active:scale-100"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>Pistol</span></button>
+            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/carbine')} className="bg-[url('../../Images/carbine.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>defensive carbine</span></button>
+            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/carry')} className="bg-[url('../../Images/conceal.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>concealed carry</span></button>
+            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/shotgun')} className="bg-[url('../../Images/screen.png')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>defensive shotgun</span></button>
+            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/explosive')} className="bg-[url('../../Images/explosive.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>explosive movement</span></button>
       
           </div>
         </section>
