@@ -82,7 +82,7 @@ export default function Home() {
                   <a href='resources/targets' data-aos="fade-left"><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Targets <i class="fa-solid fa-bullseye"></i></button></a>
                 </span>
                 <span className="flex flex-col items-center justify-center w-full">
-                  <button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press' data-aos="fade-left">Tickets <i class="fa-solid fa-ticket"></i></button>
+                  <a href='resources/tickets' data-aos="fade-left"><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press' data-aos="fade-left">Tickets <i class="fa-solid fa-ticket"></i></button></a>
                   <a href='https://angelfireammo.com/#spencer' data-aos="fade-left"><button className='bg-[#f8f6f0] shimmer-on-press rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2'>Bulk Ammo</button></a>
                 </span>
             </div>

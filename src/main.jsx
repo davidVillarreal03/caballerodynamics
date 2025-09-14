@@ -16,6 +16,7 @@ import Explosive from './pages/Carry/carry.jsx'
 import Shotgun from './pages/Shotgun/shotgun.jsx'
 import Pistol from './pages/Pistol/pistol.jsx'
 import Thanks from './pages/Thanks/thanks.jsx'
+import Tickets from './pages/Tickets/tickets.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
         path: '/thankyou',
         element: <Thanks />
       },
+      {
+        path: 'resources/tickets',
+        element: <Tickets />
+      }
 
     ]
   },
