@@ -97,12 +97,68 @@ export default function Home() {
         <section className="flex flex-col items-center w-full mt-1 p-5">
           <h1 className="text-3xl uppercase black-ops-one-regular mb-5" id='courses'>COURSES</h1>
           <div className='flex flex-col items-center gap-4 justify-center w-full p-5'>
-            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/pistol')} className="bg-[url('../../Images/pistol.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200 focus:outline-none active:scale-100"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>Pistol</span></button>
-            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/carbine')} className="bg-[url('../../Images/carbine.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>defensive carbine</span></button>
-            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/carry')} className="bg-[url('../../Images/conceal.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>concealed carry</span></button>
-            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/shotgun')} className="bg-[url('../../Images/screen.png')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>defensive shotgun</span></button>
-            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/explosive')} className="bg-[url('../../Images/explosive.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>explosive movement</span></button>
-            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/ltc')} className="bg-[url('../../Images/ltcBanner.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>License to Carry (ltc)</span></button>
+            {/* <button data-aos='zoom-out-right' onClick={() => navigate('/courses/ltc')} className="bg-[url('../../Images/ltcBanner.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>License to Carry (ltc)</span></button> */}
+            {/* <button data-aos='zoom-out-right' onClick={() => navigate('/courses/pistol')} className="bg-[url('../../Images/pistol.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200 focus:outline-none active:scale-100"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>fundamentals</span></button> */}
+            {/* <button data-aos='zoom-out-right' onClick={() => navigate('/courses/carry')} className="bg-[url('../../Images/conceal.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>concealed carry</span></button> */}
+            {/* <button data-aos='zoom-out-right' onClick={() => navigate('/courses/carbine')} className="bg-[url('../../Images/carbine.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>defensive carbine</span></button> */}
+            {/* <button data-aos='zoom-out-right' onClick={() => navigate('/courses/shotgun')} className="bg-[url('../../Images/screen.png')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>defensive shotgun</span></button> */}
+            {/* <button data-aos='zoom-out-right' onClick={() => navigate('/courses/explosive')} className="bg-[url('../../Images/explosive.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>explosive movement</span></button> */}
+            <button
+              data-aos="zoom-out-right"
+              onClick={() => navigate('/courses/ltc')}
+              className="relative bg-[url('../../Images/ltcBanner.jpg')] bg-cover bg-center text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 shadow-xl/30 hover:scale-105 transition-transform duration-200 rounded-md overflow-hidden"
+            >
+            <div className="absolute inset-0 bg-[#2b2b2b]/40"></div>
+            <span className="relative text-xl">license to carry</span>
+            </button>
+            <button
+              data-aos="zoom-out-right"
+              onClick={() => navigate('/courses/pistol')}
+              className="relative bg-[url('../../Images/pistol.jpg')] bg-cover bg-center text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 shadow-xl/30 hover:scale-105 transition-transform duration-200 rounded-md overflow-hidden"
+            >
+            <div className="absolute inset-0 bg-[#2b2b2b]/40"></div>
+            <span className="relative text-xl">fundamentals</span>
+            </button>
+            <button
+              data-aos="zoom-out-right"
+              onClick={() => navigate('/courses/carry')}
+              className="relative bg-[url('../../Images/conceal.jpg')] bg-cover bg-center text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 shadow-xl/30 hover:scale-105 transition-transform duration-200 rounded-md overflow-hidden"
+            >
+            <div className="absolute inset-0 bg-[#2b2b2b]/40"></div>
+            <span className="relative text-xl">concealed carry</span>
+            </button>
+            <button
+              data-aos="zoom-out-right"
+              onClick={() => navigate('/courses/carbine')}
+              className="relative bg-[url('../../Images/carbine.jpg')] bg-cover bg-center text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 shadow-xl/30 hover:scale-105 transition-transform duration-200 rounded-md overflow-hidden"
+            >
+            <div className="absolute inset-0 bg-[#2b2b2b]/40"></div>
+            <span className="relative text-xl">DEFENSIVE carbine</span>
+            </button>
+            <button
+              data-aos="zoom-out-right"
+              onClick={() => navigate('/courses/shotgun')}
+              className="relative bg-[url('../../Images/screen.png')] bg-cover bg-center text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 shadow-xl/30 hover:scale-105 transition-transform duration-200 rounded-md overflow-hidden"
+            >
+            <div className="absolute inset-0 bg-[#2b2b2b]/40"></div>
+            <span className="relative text-xl">DEFENSIVE SHOTGUN</span>
+            </button>
+            <button
+              data-aos="zoom-out-right"
+              onClick={() => navigate('/courses/explosive')}
+              className="relative bg-[url('../../Images/explosive.jpg')] bg-cover bg-center text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 shadow-xl/30 hover:scale-105 transition-transform duration-200 rounded-md overflow-hidden"
+            >
+            <div className="absolute inset-0 bg-[#2b2b2b]/40"></div>
+            <span className="relative text-xl">Explosive movement</span>
+            </button>
+            <button
+              data-aos="zoom-out-right"
+              onClick={() => navigate('/courses/marksman')}
+              className="relative bg-[url('../../Images/marksmanHero.jpg')] bg-cover bg-center text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 shadow-xl/30 hover:scale-105 transition-transform duration-200 rounded-md overflow-hidden"
+            >
+            <div className="absolute inset-0 bg-[#2b2b2b]/40"></div>
+            <span className="relative text-xl">Marksman</span>
+            </button>
       
           </div>
         </section>

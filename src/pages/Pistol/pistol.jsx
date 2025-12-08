@@ -30,7 +30,7 @@ export default function Pistol() {
 
                     {/* H1 - aligned left */}
                     <h1 data-aos="fade-left" className="oswald-font text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-2">
-                        HANDGUN TRAINING
+                        Pistol Fundamentals
                     </h1>
 
                     {/* H2 - aligned right */}
@@ -59,11 +59,11 @@ export default function Pistol() {
                     and safe firearms handling.
                 </p>
 
-                <h3 className="text-lg font-bold text-[#eaeaea]">Length: 2 hours</h3>
+                <h3 className="text-lg font-bold text-[#eaeaea]">Length: 4 hours</h3>
 
                 <ul className="text-lg mb-5 list-disc ml-6">
-                    <li data-aos="fade-right" data-aos-delay="200">1 hour lecture</li>
-                    <li data-aos="fade-right" data-aos-delay="200">1 hour course of fire</li>
+                    <li data-aos="fade-right" data-aos-delay="200">2 hour lecture</li>
+                    <li data-aos="fade-right" data-aos-delay="200">2 hour course of fire</li>
                 </ul>
 
                 <h3 className="text-lg font-bold text-[#eaeaea]">Topics Covered:</h3>
@@ -87,7 +87,7 @@ export default function Pistol() {
             <section className="px-4 mb-10">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
                     <li data-aos="fade-right" data-aos-delay="200">250 rounds</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Three magazines (minimum)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Three magazines <span className="italic text-[#fffaa0]">minimum</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li>
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
                     <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing</li>
@@ -109,7 +109,7 @@ export default function Pistol() {
                     <h3 className="text-lg font-bold text-[#eaeaea]">Prerequisite: 1.0 Course of any firearm: Shotgun, Rifle, Pistol, etc.</h3>
                 </div>
                 <p className="text-lg leading-relaxed mb-5">
-                    This course will on skills necessary to fend off a potential home invasion and protect your family.
+                    This course will expand on skills necessary to fend off a potential home invasion and protect your family.
                     Course is shooter dependent, bring the firearm you rely on for home defense: Shotgun, Rifle, Pistol, etc.
                 </p>
 
@@ -139,13 +139,13 @@ export default function Pistol() {
             <section className="px-4 mb-10">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
                     <li data-aos="fade-right" data-aos-delay="200">250 rounds</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Three magazines (minimum)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Three magazines <span className="italic text-[#fffaa0]">minimum</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sturdy Kydex Holster</li>
                     <li data-aos="fade-right" data-aos-delay="200">Gun case or mini vault</li>
                     <li data-aos="fade-right" data-aos-delay="200">Tactical light</li>
                     <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li>
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing (Sunglasses and hat encouraged)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing <span className="italic text-[#fffaa0]">Sun glasses and hat encouraged</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sunblock and bug spray</li>
                     <li data-aos="fade-right" data-aos-delay="200">Plenty of water and snacks</li>
                 </ul>
