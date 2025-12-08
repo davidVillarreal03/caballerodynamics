@@ -51,19 +51,20 @@ export default function Carry() {
 
             {/* DESCRIPTION CONTENT */}
             <section data-aos="fade-down" className="px-4 mt-3 text-left max-w-3xl">
-            <span className='font-bold underline underline-offset-3'>DISCLAIMER: Course is considered intermediate level. </span>
-            <span className='font-bold underline underline-offset-3'> Recommend "Fundamentals Course" for beginners.</span>
+                <div className="mb-5 bg-[#a89f94] p-2 rounded-md shadow-md shadow-[black]">
+                    <h3 className="text-lg font-bold text-[#eaeaea]">Prerequisite: Fundamentals Course</h3>
+                </div>
                 <p className="text-lg leading-relaxed mb-5">
                     This course will expand on the skill necessary to win a lethal altercation.
                     The LTC class does a great job of teaching you the legal Do's and Dont's and will
                     cover threat neutralization.
                 </p>
 
-                <h3 className="text-lg font-bold text-[#eaeaea]">Length: 2 hours</h3>
+                <h3 className="text-lg font-bold text-[#eaeaea]">Length: 6 hours</h3>
 
                 <ul className="text-lg mb-5 list-disc ml-6">
-                    <li data-aos="fade-right" data-aos-delay="200">1 hour lecture</li>
-                    <li data-aos="fade-right" data-aos-delay="200">1 hour course of fire</li>
+                    <li data-aos="fade-right" data-aos-delay="200">3 hour lecture</li>
+                    <li data-aos="fade-right" data-aos-delay="200">3 hour course of fire</li>
                 </ul>
 
                 <h3 className="text-lg font-bold text-[#eaeaea]">Topics Covered:</h3>
@@ -87,12 +88,12 @@ export default function Carry() {
             <section className="px-4 mb-10">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
                     <li data-aos="fade-right" data-aos-delay="200">250 rounds</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Three magazines (minimum)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Three magazines <span className="italic text-[#fffaa0]">minimum</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sturdy Kydex Holster</li>
                     <li data-aos="fade-right" data-aos-delay="200">Sturdy belt</li>
                     <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li>
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing (Sunglasses and hat encouraged)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing <span className="italic text-[#fffaa0]">Sun glasses and hat encouraged</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sunblock and bug spray</li>
                     <li data-aos="fade-right" data-aos-delay="200">Plenty of water and snacks</li>
                 </ul>
@@ -115,11 +116,11 @@ export default function Carry() {
                     will introduce new concepts that will aide in your survival under the worst circumstances.
                 </p>
 
-                <h3 className="text-lg font-bold text-[#eaeaea]">Length: 2 hours</h3>
+                <h3 className="text-lg font-bold text-[#eaeaea]">Length: 6 hours</h3>
 
                 <ul className="text-lg mb-5 list-disc ml-6">
-                    <li data-aos="fade-right" data-aos-delay="200">1 hour lecture</li>
-                    <li data-aos="fade-right" data-aos-delay="200">1 hour course of fire</li>
+                    <li data-aos="fade-right" data-aos-delay="200">3 hour lecture</li>
+                    <li data-aos="fade-right" data-aos-delay="200">3 hour course of fire</li>
                 </ul>
 
                 <h3 className="text-lg font-bold text-[#eaeaea]">Topics Covered:</h3>
@@ -140,12 +141,12 @@ export default function Carry() {
             <section className="px-4 mb-10">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
                     <li data-aos="fade-right" data-aos-delay="200">250 rounds</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Three magazines (minimum)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Three magazines <span className="italic text-[#fffaa0]">minimum</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sturdy Kydex Holster</li>
                     <li data-aos="fade-right" data-aos-delay="200">Sturdy belt</li>
                     <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li>
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing (Sunglasses and hat encouraged)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing <span className="italic text-[#fffaa0]">Sun glasses and hat encouraged</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sunblock and bug spray</li>
                     <li data-aos="fade-right" data-aos-delay="200">Plenty of water and snacks</li>
                 </ul>
@@ -160,6 +161,7 @@ export default function Carry() {
                 <div className="flex-1 border-t border-[#a89f94]" />
             </div>
             <section data-aos="fade-down" className="px-4 mt-3 text-left max-w-3xl">
+                
                 <div className="mb-5 bg-[#a89f94] p-2 rounded-md shadow-md shadow-[black]">
                     <h3 className="text-lg font-bold text-[#eaeaea]">Prerequisite: Concealed Carry 2.0 and a valid Texas LTC</h3>
                 </div>
@@ -167,11 +169,11 @@ export default function Carry() {
                    This course will introduce basic first aid and will expand your knowledge to a new side of shooting.
                 </p>
 
-                <h3 className="text-lg font-bold text-[#eaeaea]">Length: 2 hours</h3>
+                <h3 className="text-lg font-bold text-[#eaeaea]">Length: 6 hours</h3>
 
                 <ul className="text-lg mb-5 list-disc ml-6">
-                    <li data-aos="fade-right" data-aos-delay="200">1 hour lecture</li>
-                    <li data-aos="fade-right" data-aos-delay="200">1 hour course of fire</li>
+                    <li data-aos="fade-right" data-aos-delay="200">3 hour lecture</li>
+                    <li data-aos="fade-right" data-aos-delay="200">3 hour course of fire</li>
                 </ul>
 
                 <h3 className="text-lg font-bold text-[#eaeaea]">Topics Covered:</h3>
@@ -192,12 +194,12 @@ export default function Carry() {
             <section className="px-4 mb-10">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
                     <li data-aos="fade-right" data-aos-delay="200">250 rounds</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Three magazines (minimum)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Three magazines <span className="italic text-[#fffaa0]">minimum</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sturdy Kydex Holster</li>
                     <li data-aos="fade-right" data-aos-delay="200">Sturdy belt</li>
                     <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li>
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing (Sunglasses and hat encouraged)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing <span className="italic text-[#fffaa0]">Sun glasses and hat encouraged</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sunblock and bug spray</li>
                     <li data-aos="fade-right" data-aos-delay="200">Plenty of water and snacks</li>
                 </ul>
@@ -216,7 +218,7 @@ export default function Carry() {
                     <h3 className="text-lg font-bold text-[#eaeaea]">Prerequisite: 1.0 Course of any firearm: Shotgun, Rifle, Pistol, etc.</h3>
                 </div>
                 <p className="text-lg leading-relaxed mb-5">
-                    This course will on skills necessary to fend off a potential home invasion and protect your family.
+                    This course will expand on skills necessary to fend off a potential home invasion and protect your family.
                     Course is shooter dependent, bring the firearm you rely on for home defense: Shotgun, Rifle, Pistol, etc.
                 </p>
 
@@ -246,13 +248,13 @@ export default function Carry() {
             <section className="px-4 mb-10">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
                     <li data-aos="fade-right" data-aos-delay="200">250 rounds</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Three magazines (minimum)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Three magazines <span className="italic text-[#fffaa0]">minimum</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sturdy Kydex Holster</li>
                     <li data-aos="fade-right" data-aos-delay="200">Gun case or mini vault</li>
                     <li data-aos="fade-right" data-aos-delay="200">Tactical light</li>
                     <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li>
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing (Sunglasses and hat encouraged)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing <span className="italic text-[#fffaa0]">Sun glasses and hat encouraged</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sunblock and bug spray</li>
                     <li data-aos="fade-right" data-aos-delay="200">Plenty of water and snacks</li>
                 </ul>
