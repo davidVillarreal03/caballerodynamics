@@ -53,7 +53,9 @@ export default function Explosive() {
 
             {/* DESCRIPTION CONTENT */}
             <section data-aos="fade-down" className="px-4 mt-3 text-left max-w-3xl">
-                <span className='font-bold underline underline-offset-3'>PREREQUISITES: Carbine 2.0, Concealed Carry 1.0 and must have a valid Texas LTC.</span>
+                <div className="mb-5 bg-[#a89f94] p-2 rounded-md shadow-md shadow-[black]">
+                    <h3 className="text-lg font-bold text-[#eaeaea]">Prerequisites: Carbine 2.0, Concealed Carry 1.0 and must have a valid Texas LTC</h3>
+                </div>
                 <p className="text-lg leading-relaxed mt-2 mb-5">
                     This class is all about shooting on the move and putting
                     hits on target. Can be done with either a pistol or a carbine. This course will benefit anyone who is serious about home 
@@ -88,14 +90,14 @@ export default function Explosive() {
             {/* REQUIRED GEAR LIST */}
             <section className="px-4 mb-10">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
-                    <li data-aos="fade-right" data-aos-delay="200">Carbine w/ reliable sighting system and sling (Tactical)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Carbine w/ reliable sighting system and sling <span className="italic text-[#fffaa0]">Tactical</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Spare batteries for optics</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Bring 3 magazines (minimum)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Bring 3 magazines <span className="italic text-[#fffaa0]">minimum</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Magazine carrier: battle belt, chest rig, etc.</li>
                     <li data-aos="fade-right" data-aos-delay="200">250 rounds of ammunition</li>
                     <li data-aos="fade-right" data-aos-delay="200">Cleaning kit and oil</li>
                     <li data-aos="fade-right" data-aos-delay="200">Case for carbine</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing (Sunglasses and hat encouraged)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing <span className="italic text-[#fffaa0]">Sun glasses and hat encouraged</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
                     <li data-aos="fade-right" data-aos-delay="200">Sunscreen and bug spray</li>
                     <li data-aos="fade-right" data-aos-delay="200">Plenty of food and water</li>

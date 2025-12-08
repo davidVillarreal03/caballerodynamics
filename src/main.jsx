@@ -17,6 +17,7 @@ import Shotgun from './pages/Shotgun/shotgun.jsx'
 import Pistol from './pages/Pistol/pistol.jsx'
 import Ltc from './pages/Ltc/Ltc.jsx'
 import Thanks from './pages/Thanks/thanks.jsx'
+import Marksman from './pages/Marksman/marksman.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: 'courses/ltc',
         element: <Ltc />
+      },
+      {
+        path: 'courses/marksman',
+        element: <Marksman />
       },
 
     ]

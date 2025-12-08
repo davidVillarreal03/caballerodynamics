@@ -85,8 +85,8 @@ export default function License() {
             {/* REQUIRED GEAR LIST */}
             <section className="px-4 mb-10">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
-                    <li data-aos="fade-right" data-aos-delay="200">50 rounds (store bought ammo only)</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Servicable pistol</li>
+                    <li data-aos="fade-right" data-aos-delay="200">50 rounds <span className="italic text-[#fffaa0]">store bought ammo only</span></li>
+                    <li data-aos="fade-right" data-aos-delay="200">Serviceable pistol</li>
                     {/* <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li> */}
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
                     <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing</li>
@@ -125,7 +125,7 @@ export default function License() {
 
                 <ul className="text-lg mb-5 list-disc ml-6">
                     <li data-aos="fade-right" data-aos-delay="200">Use of flashlights and other forms of illumination.</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Obatining and acceptable sight picture.</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Obtaining an acceptable sight picture.</li>
                     <li data-aos="fade-right" data-aos-delay="200">Importance of target discrimination in defensive shootings.</li>
                 </ul>
             </section>
@@ -140,13 +140,13 @@ export default function License() {
             <section className="px-4 mb-10">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
                     <li data-aos="fade-right" data-aos-delay="200">250 rounds</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Three magazines (minimum)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Three magazines <span className="italic text-[#fffaa0]">minimum</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sturdy Kydex Holster</li>
                     <li data-aos="fade-right" data-aos-delay="200">Hand held light with fresh batteries w/Spare.</li>
                     {/* <li data-aos="fade-right" data-aos-delay="200">Tactical light</li> */}
                     <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li>
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing (Sunglasses and hat encouraged)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing <span className="italic text-[#fffaa0]">Sunglasses and hat encouraged</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sunblock and bug spray</li>
                     <li data-aos="fade-right" data-aos-delay="200">Plenty of water and snacks</li>
                 </ul>

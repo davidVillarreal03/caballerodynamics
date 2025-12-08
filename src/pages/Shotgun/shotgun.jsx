@@ -58,7 +58,7 @@ export default function Shotgun() {
                     shotgun. There will be an intensive live fire portion of the class that
                     will cover: patterning loads, multiple round engagements, reloading,
                      multiple threats, and the use of cover and concealment. Course will
-                     cover broad range of topics and will dispel some commone myths behind
+                     cover broad range of topics and will dispel some myths behind
                      one of the most common home defense tools in America.
                 </p>
 
@@ -91,9 +91,9 @@ export default function Shotgun() {
             <section className="px-4 mb-5">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
                     <li data-aos="fade-right" data-aos-delay="200">Pump or semi-automatic shotgun</li>
-                    <li data-aos="fade-right" data-aos-delay="200">75 rounds buckshot (discount on Angel Fire Ammo)</li>
-                    <li data-aos="fade-right" data-aos-delay="200">5 rounds foster/deer slug (purchase available in store)</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Closed to shoes</li>
+                    <li data-aos="fade-right" data-aos-delay="200">75 rounds buckshot <span className="italic text-[#fffaa0]">Discount on <a className='underline' href='https://angelfireammo.com/#spencer'>Angel Fire Ammo</a></span></li>
+                    <li data-aos="fade-right" data-aos-delay="200">5 rounds foster/deer slug <span className="italic text-[#fffaa0]">Purchase available in store</span></li>
+                    <li data-aos="fade-right" data-aos-delay="200">Closed-toe shoes</li>
                     <li data-aos="fade-right" data-aos-delay="200">Side saddle or slip over shell carrier</li>
                 </ul>
             </section>
@@ -124,7 +124,7 @@ export default function Shotgun() {
                     <h3 className="text-lg font-bold text-[#eaeaea]">Prerequisite: 1.0 Course of any firearm: Shotgun, Rifle, Pistol, etc.</h3>
                 </div>
                 <p className="text-lg leading-relaxed mb-5">
-                    This course will on skills necessary to fend off a potential home invasion and protect your family.
+                    This course will expand on skills necessary to fend off a potential home invasion and protect your family.
                     Course is shooter dependent, bring the firearm you rely on for home defense: Shotgun, Rifle, Pistol, etc.
                 </p>
 
@@ -154,13 +154,13 @@ export default function Shotgun() {
             <section className="px-4 mb-10">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
                     <li data-aos="fade-right" data-aos-delay="200">250 rounds</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Three magazines (minimum)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Three magazines <span className="italic text-[#fffaa0]">minimum</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sturdy Kydex Holster</li>
                     <li data-aos="fade-right" data-aos-delay="200">Gun case or mini vault</li>
                     <li data-aos="fade-right" data-aos-delay="200">Tactical light</li>
                     <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li>
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing (Sunglasses and hat encouraged)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing <span className="italic text-[#fffaa0]">Sun glasses and hat encouraged</span></li>
                     <li data-aos="fade-right" data-aos-delay="200">Sunblock and bug spray</li>
                     <li data-aos="fade-right" data-aos-delay="200">Plenty of water and snacks</li>
                 </ul>
