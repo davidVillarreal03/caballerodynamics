@@ -12,9 +12,10 @@ import Contact from './pages/Contact/contact.jsx'
 import Targets from './pages/Targets/targets.jsx'
 import Carbine from './pages/Carbine/carbine.jsx'
 import Carry from './pages/Carry/carry.jsx'
-import Explosive from './pages/Carry/carry.jsx'
+import Explosive from './pages/Explosive/explosive.jsx'
 import Shotgun from './pages/Shotgun/shotgun.jsx'
 import Pistol from './pages/Pistol/pistol.jsx'
+import Ltc from './pages/Ltc/Ltc.jsx'
 import Thanks from './pages/Thanks/thanks.jsx'
 const router = createBrowserRouter([
   {
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
       {
         path: '/thankyou',
         element: <Thanks />
+      },
+      {
+        path: 'courses/ltc',
+        element: <Ltc />
       },
 
     ]

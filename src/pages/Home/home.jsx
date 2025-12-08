@@ -16,23 +16,23 @@ export default function Home() {
         <div className='flex flex-col items-center justify-center w-full'>
         
         <section className="flex flex-col items-center justify-center">
+          <img className="" src="../../Images/heroBanner.jpg"/>
+          <div data-aos='fade-up' className="flex flex-col items-center justify-center text-center text-white">
 
-          <div data-aos='fade-up' className="flex flex-col p-10 bg-[url('../../Images/heroimage.jpg')] bg-cover bg-center items-center justify-center text-center text-white">
-            <article className="flex flex-col items-center justify-center w-full">
+          <div className="bg-[#2b2b2b] bg-opacity-80 rounded-md pt-5 w-full">
+          <article className="flex flex-col items-center justify-center w-full ">
             <h2 className="text-md font-bold uppercase">Welcome to</h2>
             <span className="black-ops-one-regular text-3xl text-black">
               Caballero <span className="text-red-500">Dynamics</span>
             </span>
-            </article>
-          <div className="bg-[#2b2b2b] opacity-80 rounded-md">
-            
-              <p className="font-bold normal-case p-5 m-2 w-full">
-                We’re dedicated to helping you sharpen your skills and build confidence,
-                whether you’re military, law enforcement, or a civilian focused on home defense.
-                Our mission is to deliver training that meets you where you are and takes you to the next level.
-              </p>
-          </div>
+          </article>
 
+          <p className="normal-case p-3">
+            We’re dedicated to helping you sharpen your skills and build confidence,
+            whether you’re military, law enforcement, or a civilian focused on home
+            defense. Our mission is to deliver training that meets you where you are 
+            and takes you to the next level.
+          </p>
             <div className="flex justify-between w-full p-3">
               <a href="#courses" data-aos='fade-right' data-aos-delay='500'>
                 <button className="bg-[#81292D] px-6 py-3 rounded-tl-lg rounded-br-lg font-semibold">
@@ -45,6 +45,11 @@ export default function Home() {
                 </button>
               </a>
             </div>
+  
+  {/* HEADING – stays fully opaque */}
+
+  {/* BODY TEXT */}
+          </div>
           </div>
         </section>
 
@@ -73,16 +78,16 @@ export default function Home() {
           </figure>
         </article>
 
-        <section className="flex flex-col items-center w-full mt-1 p-5">
+        <section className="flex flex-col items-center w-full mt-1 bg-[#2b2b2b]">
           <article className="flex flex-col items-center w-full p-5">
             <h1 className="text-3xl uppercase black-ops-one-regular mb-5" id='resources'>Resources</h1>
             <div className="flex items-center justify-between w-full p-5 bg-[#2b2b2b] w-full">
                 <span className="flex flex-col items-center justify-center w-full">
                   <a data-aos="fade-left" href='https://www.dps.texas.gov/section/handgun-licensing'><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Texas LTC <i class="fa-solid fa-id-card"></i></button></a>
-                  <a href='resources/targets' data-aos="fade-left"><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Targets <i class="fa-solid fa-bullseye"></i></button></a>
+                  {/* <a href='resources/targets' data-aos="fade-left"><button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press'>Targets <i class="fa-solid fa-bullseye"></i></button></a> */}
                 </span>
                 <span className="flex flex-col items-center justify-center w-full">
-                  <button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press' data-aos="fade-left">Tickets <i class="fa-solid fa-ticket"></i></button>
+                  {/* <button className='bg-[#f8f6f0] rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2 shimmer-on-press' data-aos="fade-left">Tickets <i class="fa-solid fa-ticket"></i></button> */}
                   <a href='https://angelfireammo.com/#spencer' data-aos="fade-left"><button className='bg-[#f8f6f0] shimmer-on-press rounded-md text-[#2b2b2b] px-4 py-3 font-bold og uppercase mb-2'>Bulk Ammo</button></a>
                 </span>
             </div>
@@ -97,6 +102,7 @@ export default function Home() {
             <button data-aos='zoom-out-right' onClick={() => navigate('/courses/carry')} className="bg-[url('../../Images/conceal.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>concealed carry</span></button>
             <button data-aos='zoom-out-right' onClick={() => navigate('/courses/shotgun')} className="bg-[url('../../Images/screen.png')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>defensive shotgun</span></button>
             <button data-aos='zoom-out-right' onClick={() => navigate('/courses/explosive')} className="bg-[url('../../Images/explosive.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>explosive movement</span></button>
+            <button data-aos='zoom-out-right' onClick={() => navigate('/courses/ltc')} className="bg-[url('../../Images/ltcBanner.jpg')] bg-cover bg-center shadow-xl/30 text-[#f8f6f0] w-full p-7 font-bold uppercase mb-2 hover:scale-105 transition-transform duration-200"><span className='text-xl bg-[#2b2b2b] px-2 py-1 rounded-md opacity-70'>License to Carry (ltc)</span></button>
       
           </div>
         </section>

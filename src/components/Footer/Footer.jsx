@@ -43,7 +43,7 @@ function Footer() {
             <h1 className="mb-2 font-bold">QUICK LINKS</h1>
             <a href="/about" className="mb-1 text-lg underline">About</a>
             <a href="/courses" className="mb-1 text-lg underline">Courses</a>
-            <a href="/contact" className="mb-1 text-lg underline">Contact</a>
+            {/* <a href="/contact" className="mb-1 text-lg underline">Contact</a> */}
             <a href="/resources" className="mb-1 text-lg underline">Resources</a>
         </div>
     </section>

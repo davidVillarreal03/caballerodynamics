@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-export default function Pistol() {
+export default function License() {
     useEffect(() => {
         AOS.init({
           duration: 1000,
@@ -17,7 +17,7 @@ export default function Pistol() {
             {/* BANNER */}
             <div className="relative w-full">
                 <img
-                    src="../../Images/bannerImages/pistolPageBanner.jpg"
+                    src="../../Images/ltcBanner.jpg"
                     alt="Pistol"
                     className="w-full h-[300px] sm:h-[350px] md:h-[450px] object-cover blur-sm"
                 />
@@ -30,7 +30,7 @@ export default function Pistol() {
 
                     {/* H1 - aligned left */}
                     <h1 data-aos="fade-left" className="oswald-font text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-2">
-                        HANDGUN TRAINING
+                        LICENSE TO CARRY
                     </h1>
 
                     {/* H2 - aligned right */}
@@ -52,27 +52,26 @@ export default function Pistol() {
             {/* DESCRIPTION CONTENT */}
             <section data-aos="fade-down" className="px-4 mt-3 text-left max-w-3xl">
                 <p className="text-lg leading-relaxed mb-5">
-                    This class is a good precursor to the LTC qualification, military
-                    qualification, or improving pistol handling skills. The intent is to 
-                    teach students a lifelong set of pistol shooting fundamentals.
-                    Introductory to pistols and focus primarily on improving accuracy
-                    and safe firearms handling.
+                    Our License to Carry (LTC) class follows the DPS guidelines and certifies
+                    the student to carry in the state of Texas. The class will entail a 50 round
+                    (store bought ammo only, no reloads or steel case ammo) qualification and lecture. Students are 
+                    required to pass a proficiency test and a written exam.
                 </p>
 
-                <h3 className="text-lg font-bold text-[#eaeaea]">Length: 2 hours</h3>
+                <h3 className="text-lg font-bold text-[#eaeaea]">Length: 7 hours</h3>
 
                 <ul className="text-lg mb-5 list-disc ml-6">
-                    <li data-aos="fade-right" data-aos-delay="200">1 hour lecture</li>
+                    <li data-aos="fade-right" data-aos-delay="200">6 hour lecture</li>
                     <li data-aos="fade-right" data-aos-delay="200">1 hour course of fire</li>
                 </ul>
 
-                <h3 className="text-lg font-bold text-[#eaeaea]">Topics Covered:</h3>
+                {/* <h3 className="text-lg font-bold text-[#eaeaea]">Topics Covered:</h3> */}
 
-                <ul className="text-lg mb-5 list-disc ml-6">
+                {/* <ul className="text-lg mb-5 list-disc ml-6">
                     <li data-aos="fade-right" data-aos-delay="200">Loading and unloading the pistol</li>
                     <li data-aos="fade-right" data-aos-delay="200">How to clear malfunctions</li>
                     <li data-aos="fade-right" data-aos-delay="200">How to hit your target quickly and precisely</li>
-                </ul>
+                </ul> */}
             </section>
 
             {/* REQUIRED GEAR HEADER */}
@@ -86,9 +85,9 @@ export default function Pistol() {
             {/* REQUIRED GEAR LIST */}
             <section className="px-4 mb-10">
                 <ul className="text-lg list-disc ml-6 space-y-1 text-left max-w-3xl">
-                    <li data-aos="fade-right" data-aos-delay="200">250 rounds</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Three magazines (minimum)</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li>
+                    <li data-aos="fade-right" data-aos-delay="200">50 rounds (store bought ammo only)</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Servicable pistol</li>
+                    {/* <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li> */}
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
                     <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing</li>
                     <li data-aos="fade-right" data-aos-delay="200">Sunblock and bug spray</li>
@@ -96,7 +95,7 @@ export default function Pistol() {
                 </ul>
             </section>
             <div>
-                <h1 className="uppercase text-3xl sm:text-4xl md:text-5xl font-bold mb-2">Home Defense</h1>
+                <h1 className="uppercase text-3xl sm:text-4xl md:text-5xl font-bold mb-2">low light pistol</h1>
             </div>
              <div data-aos="fade-down" className="w-full flex items-center gap-3 mt-6 px-4">
                 <h2 className="uppercase text-xl orbitron-font whitespace-nowrap">
@@ -106,11 +105,13 @@ export default function Pistol() {
             </div>
             <section data-aos="fade-down" className="px-4 mt-3 text-left max-w-3xl">
                 <div className="mb-5 bg-[#a89f94] p-2 rounded-md shadow-md shadow-[black]">
-                    <h3 className="text-lg font-bold text-[#eaeaea]">Prerequisite: 1.0 Course of any firearm: Shotgun, Rifle, Pistol, etc.</h3>
+                    <h3 className="text-lg font-bold text-[#eaeaea]">Prerequisite: LTC Course</h3>
                 </div>
                 <p className="text-lg leading-relaxed mb-5">
-                    This course will on skills necessary to fend off a potential home invasion and protect your family.
-                    Course is shooter dependent, bring the firearm you rely on for home defense: Shotgun, Rifle, Pistol, etc.
+                    Many defensive shootings occur in low light or no light environments.
+                    This can be shooting during the hours of darkness, or in an interior environment 
+                    with limited ambient light. To better prepare for these types of situations, we are 
+                    providing a course focused on low light, no light shooting tactics.
                 </p>
 
                 <h3 className="text-lg font-bold text-[#eaeaea]">Length: 2 hours</h3>
@@ -123,9 +124,9 @@ export default function Pistol() {
                 <h3 className="text-lg font-bold text-[#eaeaea]">Topics Covered:</h3>
 
                 <ul className="text-lg mb-5 list-disc ml-6">
-                    <li data-aos="fade-right" data-aos-delay="200">Storage/Accessability of your firearms.</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Use of cover and concealment.</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Techniques for moving and engaging targets at close distance.</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Use of flashlights and other forms of illumination.</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Obatining and acceptable sight picture.</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Importance of target discrimination in defensive shootings.</li>
                 </ul>
             </section>
              <div data-aos="fade-down" className="w-full flex items-center gap-3 px-4 mt-6 mb-2">
@@ -141,14 +142,17 @@ export default function Pistol() {
                     <li data-aos="fade-right" data-aos-delay="200">250 rounds</li>
                     <li data-aos="fade-right" data-aos-delay="200">Three magazines (minimum)</li>
                     <li data-aos="fade-right" data-aos-delay="200">Sturdy Kydex Holster</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Gun case or mini vault</li>
-                    <li data-aos="fade-right" data-aos-delay="200">Tactical light</li>
+                    <li data-aos="fade-right" data-aos-delay="200">Hand held light with fresh batteries w/Spare.</li>
+                    {/* <li data-aos="fade-right" data-aos-delay="200">Tactical light</li> */}
                     <li data-aos="fade-right" data-aos-delay="200">Cleaning kit</li>
                     <li data-aos="fade-right" data-aos-delay="200">Eye and ear protection</li>
                     <li data-aos="fade-right" data-aos-delay="200">Range appropriate clothing (Sunglasses and hat encouraged)</li>
                     <li data-aos="fade-right" data-aos-delay="200">Sunblock and bug spray</li>
                     <li data-aos="fade-right" data-aos-delay="200">Plenty of water and snacks</li>
                 </ul>
+                <p className="text-lg leading-relaxed mt-5 font-bold">DISCLAIMER: If your weapon and holster will accommodate a weapon mounted light, bring that as well but do not substitute a weapon mounted light
+                    for a hand held light.
+                </p>
             </section>
 
         </div>

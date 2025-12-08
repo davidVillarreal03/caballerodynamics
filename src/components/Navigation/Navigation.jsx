@@ -11,12 +11,14 @@ function NavTabs() {
 
     return (
         <div className='' id='top'>
-            <section className='sticky top-0 w-full flex items-center justify-between px-4 bg-[#A89F94] shadow-md z-50'>
-                <img className='h-23' src={IMAGE_URL} alt="logo" />
-                <button className='p-4'>
-                <i className="fa-solid fa-bars text-3xl text-[#D9D9D9]" onClick={toggleMenu} aria-label='Toggle Navigation'></i>
-                </button>
-            </section>
+                <section className='sticky top-0 w-full flex items-center justify-between px-4 bg-[#A89F94] shadow-md z-50'>
+           <Link to="/">
+                    <img className='h-23' src={IMAGE_URL} alt="logo" />
+           </Link>
+                    <button className='p-4'>
+                    <i className="fa-solid fa-bars text-3xl text-[#D9D9D9]" onClick={toggleMenu} aria-label='Toggle Navigation'></i>
+                    </button>
+                </section>
             <nav className = {`" absolute top-0 z-50 border-t border-[#d9d9d9] border-opacity-25 left-0 w-full text-[#D9D9D9] transition delay-150 duration-500 ease-in-out  " ${isOpen ? "translate-y-0" : "-translate-y-full"}`}>
                 <ul className = "flex flex-col pt-5 pb-5 text-3xl bg-[#A89F94]">    
                     <Link
@@ -29,16 +31,16 @@ function NavTabs() {
                             </li>   
                         </button>
                      </Link>
-                    <Link
+                    {/* <Link
                         to="/about"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
                         >
-                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]' onClick={toggleMenu}>
+                        {/* <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]' onClick={toggleMenu}>
                             <li className = "">
                                 About
                             </li>   
-                        </button>
-                     </Link>
+                        </button> */}
+                     {/* </Link> */}
                     <Link
                         to="/courses"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
@@ -49,7 +51,7 @@ function NavTabs() {
                             </li>   
                         </button>
                     </Link>
-                    <Link
+                    {/* <Link
                         to="/contact"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
                         >
@@ -58,7 +60,7 @@ function NavTabs() {
                                 Contact
                             </li>   
                         </button>
-                    </Link>
+                    </Link> */}
                     <Link
                         to="/resources"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
