@@ -5,9 +5,22 @@ import { useState } from 'react';
 function NavTabs() {
     const currentPage = useLocation().pathname;
     const [isOpen, setIsOpen] = useState(false);
+    const [isOptionsOpen, setIsOptionsOpen] = useState(false);
     const toggleMenu = () => {
-        setIsOpen(!isOpen);
+        setIsOpen(prev => !prev);
+        setIsOptionsOpen(false);
     }
+    const toggleOptions = () => {
+        setIsOptionsOpen(!isOptionsOpen);
+    }
+
+    const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+
+const toggleResources = () => {
+  setIsResourcesOpen((prev) => !prev);
+};
+
+
 
     return (
         <div className='' id='top'>
@@ -19,38 +32,117 @@ function NavTabs() {
                     <i className="fa-solid fa-bars text-3xl text-[#D9D9D9]" onClick={toggleMenu} aria-label='Toggle Navigation'></i>
                     </button>
                 </section>
-            <nav className = {`" absolute top-0 z-50 border-t border-[#d9d9d9] border-opacity-25 left-0 w-full text-[#D9D9D9] transition delay-150 duration-500 ease-in-out  " ${isOpen ? "translate-y-0" : "-translate-y-full"}`}>
-                <ul className = "flex flex-col pt-5 pb-5 text-3xl bg-[#A89F94]">    
-                    <Link
-                        to="/"
-                        className={currentPage === "/" ? "nav-link active" : "nav-link"}
+            <nav className = {`" absolute z-30 border-t border-[#d9d9d9] border-opacity-25 left-0 w-full text-[#D9D9D9] transition delay-150 duration-500 ease-in-out  " ${isOpen ? "translate-y-0" : "-translate-y-full"}`}>
+                <ul className = "flex flex-col items-start justify-start text-3xl bg-[#A89F94]">    
+                    <li className="w-full">
+                        <Link
+                            to="/"
+                            onClick={toggleMenu}
+                            className={`block w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D] ${
+                            currentPage === "/" ? "nav-link active" : "nav-link"
+                            }`}
                         >
-                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]' onClick={toggleMenu}>
-                            <li className = "">
-                                Home
-                            </li>   
+                            Home
+                        </Link>
+                    </li>
+
+                        <li className="w-full">
+                        <button
+                            onClick={toggleOptions}
+                            aria-expanded={isOptionsOpen}
+                            aria-controls="courses-submenu"
+                            className="w-full px-3 py-3 sm:py-4 flex items-center justify-center hover:bg-[#81292D] focus:bg-[#81292D] focus:outline-none focus:ring-2 focus:ring-[#f8f6f0]/50"
+                        >
+                            <span>Courses</span>
+                            <i
+                            className={`fa-solid fa-caret-down m-1 text-xl relative top-[1px] transition-transform duration-300 ${
+                                isOptionsOpen ? "rotate-180" : ""
+                            }`}
+                            />
                         </button>
-                     </Link>
-                    {/* <Link
-                        to="/about"
-                        className={currentPage === "/" ? "nav-link active" : "nav-link"}
+
+
+
+                        <ul
+                            className={`overflow-hidden transition-all duration-300 bg-[#9f968b]
+                            ${isOptionsOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}
+                            `}
                         >
-                        {/* <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]' onClick={toggleMenu}>
-                            <li className = "">
-                                About
-                            </li>   
-                        </button> */}
-                     {/* </Link> */}
-                    <Link
-                        to="/courses"
-                        className={currentPage === "/" ? "nav-link active" : "nav-link"}
-                        >
-                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]' onClick={toggleMenu}>
-                            <li className = "">
-                                Courses
-                            </li>   
-                        </button>
-                    </Link>
+                            {[
+                                ["LTC", "/courses/ltc"],
+                                ["Fundamentals", "/courses/pistol"],
+                                ["Concealed Carry", "/courses/carry"],
+                                ["Defensive Carbine", "/courses/carbine"],
+                                ["Defensive Shotgun", "/courses/shotgun"],
+                                ["Explosive Movement", "/courses/explosive"],
+                                ["Marksman", "/courses/marksman"],
+                                ].map(([label, path]) => (
+                                <li key={path} className="w-full">
+                                    <Link
+                                    to={path}
+                                    onClick={toggleMenu}
+                                    className="block w-full pl-8 pr-3 py-3 hover:bg-[#81292D] focus:bg-[#81292D]"
+                                    >
+                                    {label}
+                                    </Link>
+                                </li>
+                                ))}
+
+                        </ul>
+                        </li>
+                      <li className="w-full">
+  {/* Resources toggle */}
+  <button
+    onClick={toggleResources}
+    aria-expanded={isResourcesOpen}
+    aria-controls="resources-submenu"
+    className="w-full px-3 py-3 flex items-center justify-center gap-2 hover:bg-[#81292D] focus:bg-[#81292D]"
+  >
+    <span className="leading-none">Resources</span>
+    <i
+      className={`fa-solid fa-caret-down text-xl relative top-[1px] transition-transform duration-300 ${
+        isResourcesOpen ? "rotate-180" : ""
+      }`}
+    />
+  </button>
+
+  {/* Resources submenu */}
+  <ul
+    id="resources-submenu"
+    className={`overflow-hidden transition-all duration-300 bg-[#9f968b]
+      ${isResourcesOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"}
+    `}
+  >
+    <li>
+      <a
+        href="https://www.dps.texas.gov/section/handgun-licensing"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={toggleMenu}
+        className="block w-full pl-8 pr-3 py-3 hover:bg-[#81292D]"
+      >
+        LTC
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://angelfireammo.com/#spencer"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={toggleMenu}
+        className="block w-full pl-8 pr-3 py-3 hover:bg-[#81292D]"
+      >
+        Bulk Ammo
+      </a>
+    </li>
+  </ul>
+</li>
+
+
+
+
+                    {/* </Link> */}
                     {/* <Link
                         to="/contact"
                         className={currentPage === "/" ? "nav-link active" : "nav-link"}
@@ -61,16 +153,16 @@ function NavTabs() {
                             </li>   
                         </button>
                     </Link> */}
-                    <Link
-                        to="/resources"
-                        className={currentPage === "/" ? "nav-link active" : "nav-link"}
+                    {/* <li className="w-full">
+                        <Link
+                            to="/resources"
+                            onClick={toggleMenu}
+                            className="block w-full p-3 border-b border-[#d9d9d9] border-opacity-25 hover:bg-[#81292D] focus:bg-[#81292D]"
                         >
-                        <button className='w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D]' onClick={toggleMenu}>
-                            <li className = "">
-                                Resources
-                            </li>
-                        </button>   
-                    </Link>
+                            Resources
+                        </Link>
+                    </li> */}
+
                 </ul>
 
                 <button className=' bg-black opacity-80 left-50 rounded-full'>
