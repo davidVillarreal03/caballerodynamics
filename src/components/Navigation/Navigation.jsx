@@ -81,7 +81,7 @@ const toggleResources = () => {
                                     <Link
                                     to={path}
                                     onClick={toggleMenu}
-                                    className="block w-full pl-8 pr-3 py-3 hover:bg-[#81292D] focus:bg-[#81292D]"
+                                    className="block w-full pl-8 pr-9 py-3 hover:bg-[#81292D] focus:bg-[#81292D]"
                                     >
                                     {label}
                                     </Link>
@@ -119,7 +119,7 @@ const toggleResources = () => {
         target="_blank"
         rel="noopener noreferrer"
         onClick={toggleMenu}
-        className="block w-full pl-8 pr-3 py-3 hover:bg-[#81292D]"
+        className="block w-full pl-8 pr-9 py-3 hover:bg-[#81292D]"
       >
         LTC
       </a>
@@ -131,7 +131,7 @@ const toggleResources = () => {
         target="_blank"
         rel="noopener noreferrer"
         onClick={toggleMenu}
-        className="block w-full pl-8 pr-3 py-3 hover:bg-[#81292D]"
+        className="block w-full pl-8 pr-9 py-3 hover:bg-[#81292D]"
       >
         Bulk Ammo
       </a>
