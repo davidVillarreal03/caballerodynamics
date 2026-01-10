@@ -27,7 +27,7 @@ export default function Home() {
             </span>
           </article>
 
-          <p className="normal-case p-3">
+          <p className="normal-case font-bold p-3">
             We’re dedicated to helping you sharpen your skills and build confidence,
             whether you’re military, law enforcement, or a civilian focused on home
             defense. Our mission is to deliver training that meets you where you are 
@@ -35,12 +35,12 @@ export default function Home() {
           </p>
             <div className="flex justify-between w-full p-3">
               <a href="#courses" data-aos='fade-right' data-aos-delay='500'>
-                <button className="bg-[#81292D] px-6 py-3 rounded-tl-lg rounded-br-lg font-semibold">
+                <button className="bg-[#81292D] px-6 py-3 rounded-sm font-semibold">
                   COURSES
                 </button>
               </a>
               <a href="#resources" data-aos='fade-left' data-aos-delay='500'>
-                <button className="bg-[#81292D] px-6 py-3 rounded-tl-lg rounded-br-lg font-semibold">
+                <button className="bg-[#81292D] px-6 py-3 rounded-sm font-semibold">
                   RESOURCES
                 </button>
               </a>
