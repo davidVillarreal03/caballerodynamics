@@ -54,7 +54,7 @@ export default function Shotgun() {
             {/* DESCRIPTION CONTENT */}
             <section data-aos="fade-down" className="px-4 mt-3 text-left max-w-3xl">
                 <p className="text-lg leading-relaxed mb-5">
-                    This course will take you throught the fundamentals of home defense
+                    This course will take you through the fundamentals of home defense
                     shotgun. There will be an intensive live fire portion of the class that
                     will cover: patterning loads, multiple round engagements, reloading,
                      multiple threats, and the use of cover and concealment. Course will

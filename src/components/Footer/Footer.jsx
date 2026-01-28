@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
+import { Link, useLocation } from 'react-router-dom';
 function Footer() {
 
         return (
@@ -41,10 +42,10 @@ function Footer() {
         </div>
         <div className="flex flex-col items-start">
             <h1 className="mb-2 font-bold">QUICK LINKS</h1>
-            <a href="/about" className="mb-1 text-lg underline">About</a>
-            <a href="/courses" className="mb-1 text-lg underline">Courses</a>
-            {/* <a href="/contact" className="mb-1 text-lg underline">Contact</a> */}
-            <a href="/resources" className="mb-1 text-lg underline">Resources</a>
+            <Link to = "/about" className="mb-1 text-lg underline">
+            About
+            </Link>
+            <a href="/" className="mb-1 text-lg underline">Home</a>
         </div>
     </section>
 

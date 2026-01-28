@@ -45,6 +45,17 @@ const toggleResources = () => {
                             Home
                         </Link>
                     </li>
+                    <li className="w-full">
+                        <Link
+                            to="/about"
+                            onClick={toggleMenu}
+                            className={`block w-full p-3 hover:bg-[#81292D] focus:bg-[#81292D] ${
+                            currentPage === "/" ? "nav-link active" : "nav-link"
+                            }`}
+                        >
+                            About
+                        </Link>
+                    </li>
 
                         <li className="w-full">
                         <button
